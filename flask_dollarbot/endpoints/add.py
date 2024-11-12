@@ -7,6 +7,7 @@ add_bp = Blueprint('add', __name__)
 
 
 def validate_add_request(chat_id, expense_date, expense_amount, expense_category):
+    # validate input request 
     if not chat_id or not expense_date or not expense_category or not expense_amount:
         return False
     if datetime.strptime(expense_date, '%Y-%m-%d').date() > datetime.today().date():
@@ -52,10 +53,15 @@ def add_single():
         str(expense_category),
         str(expense_amount),
     )
+    # get all user data 
     user_list = helper.read_json()
+    if user_list is None :
+        user_list.append("864914211") #Placeholder value
+    # add new json for new user
     if str(chat_id) not in user_list:
         user_list[str(chat_id)] = {"data": [], "budget": {"overall": "0", "category": None}}
     record = "{},{},{}, {}".format(date_str, category_str, amount_str, expense_currency)
+    # write data 
     user_list[str(chat_id)]["data"].append(record)
     helper.write_json(user_list)
     return jsonify({'message': 'Expense record created successfully'}), 200

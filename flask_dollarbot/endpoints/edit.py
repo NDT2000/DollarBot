@@ -151,7 +151,7 @@ def edit_category():
         "user_id": "864914211",
         "selected_data": [
             "Date=17-May-2023",
-            "Category=Transport",
+            "Category=Groceries",
             "Amount=50.0"
         ],
         "new_category": "Travel"

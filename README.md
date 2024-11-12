@@ -5,12 +5,14 @@
 [![DOI](https://zenodo.org/badge/715323572.svg)](https://zenodo.org/doi/10.5281/zenodo.10146708)
 ![GitHub contributors](https://img.shields.io/github/contributors/tpanati/DollarBot)
 [![Platform](https://img.shields.io/badge/Platform-Telegram-blue)](https://desktop.telegram.org/)
+[![pylint](https://img.shields.io/badge/PyLint-6.61-orange?logo=python&logoColor=white)]([https://github.com/SoftwareEngNoobs/DollarBot/blob/release-1.0/.github/workflows/python-app.yml]) [![PEP8](https://img.shields.io/badge/autopep8%20-checked-green.svg)] 
+[![PEP8](https://img.shields.io/badge/autopep8%20-checked-green.svg)]
 [![codecov](https://codecov.io/gh/tpanati/DollarBot/graph/badge.svg?token=23RW1XPB3P)](https://codecov.io/gh/tpanati/DollarBot)
 ![Lines of code](https://tokei.rs/b1/github/tpanati/DollarBot)
 ![Version](https://img.shields.io/github/v/release/tpanati/DollarBot?color=ff69b4&label=Version)
 ![GitHub issues](https://img.shields.io/github/issues-raw/tpanati/DollarBot)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/tpanati/DollarBot)
-[![Build Status](https://app.travis-ci.com/usmanwardag/dollar_bot.svg?branch=main)](https://app.travis-ci.com/usmanwardag/dollar_bot)
+[![Build](https://github.com/SoftwareEngNoobs/DollarBot/actions/workflows/python-app.yml/badge.svg)](https://github.com/SoftwareEngNoobs/DollarBot/actions/workflows/python-app.yml)
 
 # 💰 Dollar Bot 💰
 
@@ -32,7 +34,7 @@ And the best part? DollarBot is your financial sidekick, available on any Web Br
 
 ## Scorecard
 
-[Score card - Group 13](https://github.com/tpanati/DollarBot/blob/main/proj3/DollarBot_proj3_scorecard.csv)
+[Score card - Group 9](https://docs.google.com/document/d/1HRIEcZEZftQMgsl30W4LBVF9Q4Kj-WhWMT_pbpFhiy0/edit?tab=t.0)
 
 ## Demo Video
 
@@ -194,18 +196,28 @@ Allows the users to login to their existing Dollar Bot Accounts:
 
 ### SignUp
 Allows the user to SignUp for a new Account and allows them to import data from their existing Telegram Dollar Bot!
+![Screenshot 2024-11-01 at 11 33 21 PM](https://github.com/user-attachments/assets/3aae03d4-5ac5-482d-b041-a889926d684f)
+
 
 ### Add Expenses
 Allows the user to add expenses seamlessly across different devices!
+![Screenshot 2024-11-01 at 11 35 02 PM](https://github.com/user-attachments/assets/096286a8-9bb4-4c5e-a7ba-127815346a5f)
+
 
 ### Edit Expense
 Allows users to select a specific expense, edit its current parameters, and update the details in the database without having to go through multiple commands.
+![Screenshot 2024-11-01 at 11 47 21 PM](https://github.com/user-attachments/assets/98d690b9-bef2-45cf-b40a-0c6149621f70)
+
 
 ### Delete Expense
 Allows users to perform bulk Delete Operation without the hassle of typing multiple commands or making multiple edits.
+![Screenshot 2024-11-01 at 11 47 33 PM](https://github.com/user-attachments/assets/a281b197-94a8-444c-ac65-c7f88bef01f3)
+
 
 ### Multi-Currency Support
-Using a dropdown menu the user can select the currencies they're more 
+Using a dropdown menu the user can select and log expenses in multiple currencies (USD, INR, EUR, etc.).
+![Screenshot 2024-11-01 at 11 38 09 PM](https://github.com/user-attachments/assets/a3702f33-91ab-4d05-b954-9f0f50fe7d3e)
+
 
 Here's a quick overview of how each of the commands work. Simply enter /<command_name> into the Telegram chat and watch as the magic happens! 
 
@@ -337,8 +349,10 @@ We would like to thank Dr. Timothy Menzies for helping us understand the process
 This project is licensed under the terms of the MIT license. Please check [LICENSE](https://github.com/tpanati/DollarBot/blob/main/LICENSE) for more details.
 
 ## Contributors
-1. 
+1. Varun Kakkalameli(vkakkal)
+2. Krithika Ragothaman(kragoth)
+3. Mahim Dashora(mdashor)
 
 # :calling: Support
 
-For any support, email us at `vadusum@ncsu.edu`
+For any support, email us at `vkakkal@ncsu.edu`

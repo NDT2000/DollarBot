@@ -10,7 +10,8 @@ on:
     branches: ["release-1.0" ]
 
 permissions:
-  contents: read
+  contents: write
+  actions: write
 
 jobs:
   build:
@@ -59,11 +60,12 @@ jobs:
         coverage run -m pytest test/
 
     - name: Test with pytest in flask_dollarbot root
-      working-directory: dollarbot/flask_dollarbot
+      working-directory: flask_dollarbot  # Navigate to flask_dollarbot as the root directory
       env:
-        PYTHONPATH: ${{ github.workspace }}/dollarbot:$(pwd)/DollarBot  # Set PYTHONPATH for flask_dollarbot root
+        PYTHONPATH: /home/runner/work/DollarBot/flask_dollarbot:$(pwd)/flask_dollarbot  # Full path to flask_dollarbot
       run: |
-        export PYTHONPATH=$(pwd)/DollarBot  # Also set in local environment
+        export PYTHONPATH=$(pwd):$PYTHONPATH  # Ensures that flask_dollarbot is part of PYTHONPATH in the local environment
+        coverage run -m pytest tests/
         pip install pytest pytest-cov
         pytest --cov --cov-report=xml
 
